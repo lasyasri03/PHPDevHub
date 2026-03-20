@@ -1,0 +1,233 @@
+/* Custom styles for PHPDevHub */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f6fb;
+    color: #1f2937;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #5a6fd8;
+    border-color: #5a6fd8;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.developer-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.role-shell {
+    background: linear-gradient(180deg, #eef3fb 0%, #f7f9fc 100%);
+}
+
+.role-layout {
+    min-height: 100vh;
+    display: flex;
+}
+
+.role-sidebar {
+    width: 260px;
+    background: #0f172a;
+    color: #fff;
+    padding: 28px 18px;
+}
+
+.role-brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.role-subtitle {
+    color: #94a3b8;
+    margin: 8px 0 24px;
+}
+
+.role-nav-link {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.role-nav-link:hover,
+.role-nav-link.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.role-nav-link.logout {
+    margin-top: 22px;
+    background: rgba(239, 68, 68, 0.14);
+    color: #fecaca;
+}
+
+.role-content {
+    flex: 1;
+    padding: 28px;
+}
+
+.role-header {
+    margin-bottom: 24px;
+}
+
+.role-title {
+    margin: 0;
+    font-size: 32px;
+}
+
+.role-copy {
+    margin: 8px 0 0;
+    color: #6b7280;
+}
+
+.panel-card {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+    padding: 22px;
+    margin-bottom: 22px;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stat-tile {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
+}
+
+.stat-label {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.status-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-secondary {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.table-clean thead th {
+    color: #6b7280;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    border-bottom-width: 1px;
+}
+
+.table-clean tbody tr:hover {
+    background: #f8fbff;
+}
+
+.section-title {
+    margin: 0 0 14px;
+    font-size: 20px;
+}
+
+.announcement-item,
+.timeline-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.announcement-item:last-child,
+.timeline-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.meta-text {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .role-layout {
+        flex-direction: column;
+    }
+
+    .role-sidebar {
+        width: 100%;
+    }
+
+    .role-content {
+        padding: 20px;
+    }
+}
