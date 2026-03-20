@@ -1,13 +1,14 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
-$dbName = 'phpdevhub';
+$dbHost = getenv('MYSQLHOST');
+$dbUser = getenv('MYSQLUSER');
+$dbPass = getenv('MYSQLPASSWORD');
+$dbName = getenv('MYSQLDATABASE');
+$dbPort = getenv('MYSQLPORT');
 
 try {
-    $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+    $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
     $conn->set_charset('utf8mb4');
 
     $conn->query(
