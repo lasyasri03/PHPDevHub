@@ -1,11 +1,11 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$dbHost = getenv('DB_HOST');
-$dbUser = getenv('DB_USERNAME');
-$dbPass = getenv('DB_PASSWORD');
-$dbName = getenv('DB_NAME');
-$dbPort = getenv('DB_PORT');
+$dbHost = 'db.fr-roub1.bengt.wasmernet.com';
+$dbUser = 'user_d3e7b517';
+$dbPass = 'pw_jPjXcaCVH2PHTZxx0IhUqImzNZCoVUDY';
+$dbName = 'db_88370286';
+$dbPort = 20184;
 try {
     $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName, $dbPort);
     $conn->set_charset('utf8mb4');
