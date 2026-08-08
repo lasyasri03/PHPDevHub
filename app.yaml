@@ -1,0 +1,21 @@
+kind: wasmer.io/App.v0
+name: phpdevhub
+owner: lasyasri03
+
+enableDatabase: true
+
+locality:
+  regions:
+    - fr-roub1
+
+env:
+  PHPIX_PHP_THREADS: '4'
+
+annotations:
+  anybuild.run/config:
+    composer_enable: true
+    name: out
+    phpix: true
+  anybuild.run/provider: php
+  anybuild.run/version: 0.25.0
+  wasmer.io/version: 7.2.1
