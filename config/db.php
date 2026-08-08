@@ -255,7 +255,8 @@ try {
     }
 
     $conn->query("UPDATE disputes SET status = 'under_review' WHERE status = 'in_review'");
-} catch (mysqli_sql_exception $e) {
-    die('Database connection failed: ' . $e->getMessage());
+}  catch (mysqli_sql_exception $e) {
+    die('DATABASE ERROR: ' . $e->getMessage() . '<br>Line: ' . $e->getLine());
 }
+
 ?>
