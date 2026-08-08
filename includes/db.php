@@ -1,9 +1,10 @@
 <?php
 // Database connection
-$host = 'localhost';
-$dbname = 'phpdevhub';
-$username = 'root'; // Default XAMPP
-$password = ''; // Default XAMPP
+$host = getenv('DB_HOST');
+$dbname = getenv('DB_NAME');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$port = getenv('DB_PORT');
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
